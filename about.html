@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- fontawesome.com -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!-- https://github.com/michalsnik/aos -->
+    <link rel="shortcut icon" href="img/PageIcon.jpeg" type="image/jpeg type">
+    <title>About YourIELTS</title>
+  </head>
+  <body>
+
+<!-- Header -->
+    <header class="header">
+      <div class="inner-header">
+        <div class="logo">
+          <a href="index.html"><h1>Your<span>IELTS</span></h1></a>
+        </div>
+        <nav class="nav-header">
+          <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="index.php" target="_blank">Quiz</a></li>
+            <li><a href="#">Content &nbsp; <i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="listening.html" target="_blank">Listening</a></li>
+                <li><a href="reading.html" target="_blank">Reading</a></li>
+                <li><a href="writing.html" target="_blank">Writing</a></li>
+                <li><a href="speaking.html" target="_blank">Speaking</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<!-- /Header -->
+
+
+<div class="page-main">
+
+  <div class="clock">
+    <div class="clock-item" id = "clock" onload="currentTime()"></div>
+    <p class="clock-item" id="welcome"></p>
+  </div>
+
+  <div class="inner-main about-page">
+    <!-- Content Sources: https://www.ielts.org/about-ielts/what-is-ielts
+                          https://www.ielts.org/for-test-takers/test-format -->
+    <h1>About YourIELTS</h1><hr>
+    <p data-aos="fade-out"><span>YourIELTS</span> is a website that helps you to make a full knowledge about
+      IELTS test and all its sections (Listening, Reading, Writing and Speaking),
+       and provides links of practice tests for you to test yourself and know in
+       which level you are and start studying upon that level.</p><hr>
+
+       <h2>What is IELTS?</h2>
+       <p>The International English Language Testing System (IELTS) is designed to help you work,
+         study or migrate to a country where English is the native language.
+         This includes countries such as Australia, Canada, New Zealand, the UK and USA.
+         Your ability to listen, read, write and speak in English will be assessed during the test.
+         IELTS is graded on a scale of 1-9.
+       </p><br><br>
+       <h2>Why take IELTS?</h2>
+       <p>- If you are looking to work, live or study in an English-speaking country,
+         then you must be able to demonstrate a high level of English language ability.<br>
+         - English is the third most spoken language in the world, with 379 million speakers worldwide.<br>
+         - Being able to communicate in the native language of the country you wish to work or study in,
+         has a wide range of benefits. It is also essential for job opportunities as well as integration into the community.<br>
+         - IELTS is the most popular test for those looking to migrate to Australia, Canada, New Zealand and the UK.
+         It is globally recognised by more than 11,000 employers, universities,
+         schools and immigration bodies including 3,400 institutions in the USA.
+       </p><br><br>
+       <h2>Test Format:</h2>
+       <p>There are two types of  IELTS: <span>Academic and General Training.</span> All test takers take the same Listening and Speaking tests but
+         different Reading and Writing tests. Make sure that you prepare for the correct test type.<br>
+         The Listening, Reading and Writing sections of all IELTS tests are completed on the same day, with no breaks in between them.<br>
+         The Speaking section, however, can be completed up to a week before or after the other tests. The total test time is 2 hours and 45 minutes.
+       </p><hr>
+       <h5 data-aos="fade-right">YourIELTS Team:</h5>
+       <ul data-aos="fade-left">
+         <li><i class="far fa-user"></i> &nbsp; Leen Aouto | &nbsp;</li>
+         <li><i class="far fa-user"></i> &nbsp; Lady Aouto | &nbsp;</li>
+         <li><i class="far fa-user"></i> &nbsp; Tahani Alsalamah | &nbsp;</li>
+         <li><i class="far fa-user"></i> &nbsp; Deem Abdullah | &nbsp;</li>
+         <li><i class="far fa-user"></i> &nbsp; Reham Naji</li>
+       </ul>
+  </div>
+</div>
+
+<!-- Footer -->
+    <div class="footer">
+      <div class="inner-footer">
+
+        <div class="footer-section contact-form">
+            <p>Contact us:</p>
+            <form id="contact-us-form" onsubmit="return alertMessage()" action="contact.php" method="post">
+              <input type="email" name="email" id="email" class="text-input contact-input" placeholder="Your E-mail"
+              onkeydown="validate()">
+              <span id="email-verify"></span>
+              <textarea name="msg" id="message" class="text-input contact-input" placeholder="Your Message"></textarea>
+              <span id="text"></span>
+              <button type="submit" class="btn submit-btn">
+                <i class="fas fa-envelope-open-text"></i> &nbsp;
+                Send
+              </button>
+            </form>
+
+        </div>
+
+        <div class="footer-section links">
+          <p>Follow Us</p><br>
+          <div class="mail-us">
+            <a href="mailto:yourIELTS2021@gmail.com"><i class="far fa-envelope"></i> &nbsp; Mail YourIELTS!</a>
+          </div>
+          <div class="social-links">
+            <a href="https://twitter.com/ielts_your" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourielts2021/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Yourielts-109113848230718" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section about">
+          <div class="about-us">
+            <a href="about.html" target="_self"><span class="span1">About<br>
+            </span><span class="span2">Your</span><span class="span1">IELTS</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- /Footer -->
+
+<!-- Scripts -->
+  <script type="text/javascript" src="clock.js"></script>
+  <script type="text/javascript" src="input_verification.js"></script>
+  <!-- https://github.com/michalsnik/aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700
+    });
+  </script>
+<!-- /Scripts -->
+  </body>
+</html>

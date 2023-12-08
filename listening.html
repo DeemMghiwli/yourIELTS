@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- fontawesome.com -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!-- https://github.com/michalsnik/aos -->
+    <link rel="shortcut icon" href="img/PageIcon.jpeg" type="image/jpeg type">
+    <title>Listening</title>
+  </head>
+  <body>
+
+<!-- Header -->
+    <header class="header">
+      <div class="inner-header">
+        <div class="logo">
+          <a href="index.html"><h1>Your<span>IELTS</span></h1></a>
+        </div>
+        <nav class="nav-header">
+          <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="index.php" target="_blank">Quiz</a></li>
+            <li><a href="#">Content &nbsp; <i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="listening.html" target="_blank">Listening</a></li>
+                <li><a href="reading.html" target="_blank">Reading</a></li>
+                <li><a href="writing.html" target="_blank">Writing</a></li>
+                <li><a href="speaking.html" target="_blank">Speaking</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<!-- /Header -->
+
+<div class="page-main">
+
+  <div class="clock">
+    <div class="clock-item" id = "clock" onload="currentTime()"></div>
+    <p class="clock-item" id="welcome"></p>
+  </div>
+
+  <div class="inner-main test-format">
+    <!-- Content Source: https://www.ielts.org/for-test-takers/test-format-->
+    <h1>Listening</h1>
+    <form>
+      <p data-aos="fade-out">Click on the button bellow to go to sample test questions and practice</p><br>
+      <a href="listening_sample.html" target="_self"><input type="button" class="go-btn" value="LET'S GO"></a>
+    </form>
+    <hr>
+
+    <p>You will listen to four recordings of native English speakers and
+      then write your answers to a series of questions.</p>
+      <ul>
+        <li>Recording 1 – a conversation between two people set in an everyday social context.</li>
+        <li>Recording 2 – a monologue set in an everyday social context, e.g. a speech about local facilities.</li>
+        <li>Recording 3 – a conversation between up to four people set in an educational or training context, e.g. a university tutor and a student discussing an assignment.</li>
+        <li>Recording 4 – a monologue on an academic subject, e.g. a university lecture.</li>
+      </ul>
+      <p>Assessors will be looking for evidence of your ability to understand the main ideas and detailed factual information, the opinions and attitudes of speakers,
+        the purpose of an utterance and evidence of your ability to follow the development of ideas.</p><hr>
+
+        <h2>IELTS Listening description:</h2>
+        <p><span>Paper format: </span>There are four parts with ten questions each. The questions are designed so that the answers appear in the order they are heard in the audio.</p>
+        <p>The first two parts deal with situations set in everyday social contexts. In Part 1, there is a conversation between two speakers (for example, a conversation about travel arrangements),
+          and in Part 2, there is a monologue in (for example, a speech about local facilities). The final two parts deal with situations set in educational and training contexts. In Part 3,
+          there is a conversation between two main speakers (for example, two university students in discussion, perhaps guided by a tutor), and in Part 4, there is a monologue on an academic subject.
+        </p>
+        <p>The recordings are heard only once. They include a range of accents, including British, Australian, New Zealand, American and Canadian.</p>
+        <p><span>No. of questions: </span>40</p>
+        <p><span>Timing: </span>Approximately 30 minutes (plus 10 minutes transfer time).</p>
+        <p><span>Task types: </span>A variety of question types are used, chosen from the following: multiple choice, matching, plan/map/diagram labelling,
+          form/note/table/flow-chart/summary completion, sentence completion.</p>
+        <p><span>Answering: </span>Test takers write their answers on the question paper as they listen and at the end of the test are given 10 minutes to transfer their answers to an answer sheet. Care should be
+          taken when writing answers on the answer sheet as poor spelling and grammar are penalised.</p>
+        <p><span>Marks: </span>Each question is worth 1 mark.</p><hr>
+
+        <h2>Task type 1 - Multiple choice</h2>
+        <p><span>Task type and format: </span>In multiple choice tasks, there is a question followed by three possible answers, or the beginning of a sentence followed by three possible ways to complete the sentence.
+          Test takers are required to choose the one correct answer - A, B or C.</p>
+        <p>Sometimes, test takers are given a longer list of possible answers and told that they have to choose more than one. In this case, they should read the question carefully to check how many answers are required.</p>
+        <p><span>Task focus: </span>Multiple choice questions are used to test a wide range of skills. The test taker may be required to have a detailed understanding of specific points or an overall understanding of the main points of the listening text.</p>
+        <p><span>No. of questions: </span>Variable</p><hr>
+
+        <h2>Task type 2 - Matching</h2>
+        <p><span>Task type and format: </span>Test takers are required to match a numbered list of items from the listening text to a set of options on the question paper. The set of options may be criteria of some kind.</p>
+        <p><span>Task focus: </span>Matching assesses the skill of listening for detail and whether a test taker can understand information given in a conversation on an everyday topic, such as the different types of hotel or guest house accommodation.
+          It also assesses the ability to follow a conversation between two people. It may also be used to assess test takers’ ability to recognise relationships and connections between facts in the listening text.</p>
+        <p><span>No. of questions: </span>Variable</p><hr>
+
+        <h2>Task type 3 – Plan, map, diagram labelling</h2>
+        <p><span>Task type and format: </span>Test takers are required to complete labels on a plan (eg of a building), map (eg of part of a town) or diagram (e.g. of a piece of equipment). The answers are usually selected from a list on the question paper.</p>
+        <p><span>Task focus: </span>This type of task assesses the ability to understand, for example, a description of a place, and to relate this to a visual representation. This may include being able to follow language expressing spatial relationships and directions
+          (e.g. straight on/through the far door).</p>
+        <p><span>No. of questions: </span>Variable</p><hr>
+
+        <h2>Task type 4 – Form, note, table, flow-chart, summary completion</h2>
+        <p><span>Task type and format: </span>Test takers are required to fill in the gaps in an outline of part or of all of the listening text. The outline will focus on the main ideas/facts in the text. It may be:</p>
+        <ul>
+          <li>a form: often used to record factual details such as names</li>
+          <li>a set of notes: used to summarise any type of information using the layout to show how different items relate to one another</li>
+          <li>a table: used as a way of summarising information which relates to clear categories – e.g. place/time/price,</li>
+          <li>a flow-chart: used to summarise a process which has clear stages, with the direction of the process shown by arrows.</li>
+        </ul>
+        <p>Test takers may have to select their answers from a list on the question paper or identify the missing words from the recording, keeping to the word limit stated in the instructions.
+          Test takers do not have to change the words from the recording in any way.</p>
+        <p>Test takers should read the instructions very carefully as the number of words or numbers they should use to fill the gaps will vary. A word limit is given, for example, ‘NO MORE THAN TWO WORDS AND/OR A NUMBER’.
+          Test takers are penalised for writing more than the stated number of words, and test takers should check this word limit carefully for each task. Contracted words will not be tested. Hyphenated words count as single words.</p>
+        <p><span>Task focus: </span>This focuses on the main points which a listener would naturally record in this type of situation.</p>
+        <p><span>No. of questions: </span>Variable</p><hr>
+
+        <h2>Task type 5 – Sentence completion</h2>
+        <p><span>Task type and format: </span>Test takers are required to read a set of sentences summarising key information from all the listening text or from one part of it. They then fill a gap in each sentence using information from the listening text.
+          A word limit is given, for example, ‘NO MORE THAN ONE WORD AND/OR A NUMBER’.</p>
+        <p>Test takers are penalised for writing more than the stated number of words. (Test takers should check this word limit carefully for each task: the limit is either ONE, TWO or THREE words). Contracted words will not be tested. Hyphenated words count as single words.</p>
+        <p><span>Task focus: </span>Sentence completion focuses on the ability to identify the key information in a listening text. Test takers have to understand functional relationships such as cause and effect.</p>
+        <p><span>No. of questions: </span>Variable</p><hr>
+
+        <h2>Task type 6 – Short-answer questions</h2>
+        <p><span>Task type and format: </span>Test takers are required to read a question and then write a short answer using information from the listening text. A word limit is given, for example,
+          ‘NO MORE THAN THREE WORDS AND/OR A NUMBER’. Test takers are penalised for writing more than the stated number of words. (Test takers should check this word limit carefully for each task.) Contracted words will not be tested.
+           Hyphenated words count as single words. Sometimes test takers are given a question which asks them to list two or three points.</p>
+        <p><span>Task focus: </span>Sentence completion focuses on the ability to listen for concrete facts, such as places, prices or times, within the listening text.</p>
+        <p><span>No. of questions: </span>Variable</p><hr>
+
+        <h5 data-aos="fade-right">Source: www.ielts.org</h5>
+    </div>
+</div>
+
+<!-- Footer -->
+    <div class="footer">
+      <div class="inner-footer">
+
+        <div class="footer-section contact-form">
+            <p>Contact us:</p>
+            <form id="contact-us-form" onsubmit="return alertMessage()" action="contact.php" method="post">
+              <input type="email" name="email" id="email" class="text-input contact-input" placeholder="Your E-mail"
+              onkeydown="validate()">
+              <span id="email-verify"></span>
+              <textarea name="msg" id="message" class="text-input contact-input" placeholder="Your Message"></textarea>
+              <span id="text"></span>
+              <button type="submit" class="btn submit-btn">
+                <i class="fas fa-envelope-open-text"></i> &nbsp;
+                Send
+              </button>
+            </form>
+        </div>
+
+        <div class="footer-section links">
+          <p>Follow Us</p><br>
+          <div class="mail-us">
+            <a href="mailto:yourIELTS2021@gmail.com"><i class="far fa-envelope"></i> &nbsp; Mail YourIELTS!</a>
+          </div>
+          <div class="social-links">
+            <a href="https://twitter.com/ielts_your" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourielts2021/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Yourielts-109113848230718" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section about">
+          <div class="about-us">
+            <a href="about.html" target="_self"><span class="span1">About<br>
+            </span><span class="span2">Your</span><span class="span1">IELTS</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- /Footer -->
+
+<!-- Scripts -->
+  <script type="text/javascript" src="clock.js"></script>
+  <script type="text/javascript" src="input_verification.js"></script>
+  <!-- https://github.com/michalsnik/aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700
+    });
+  </script>
+<!-- /Scripts -->
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- fontawesome.com -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!-- https://github.com/michalsnik/aos -->
+    <link rel="shortcut icon" href="img/PageIcon.jpeg" type="image/jpeg type">
+    <title>Speaking</title>
+  </head>
+  <body>
+
+<!-- Header -->
+    <header class="header">
+      <div class="inner-header">
+        <div class="logo">
+          <a href="index.html"><h1>Your<span>IELTS</span></h1></a>
+        </div>
+        <nav class="nav-header">
+          <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="index.php" target="_blank">Quiz</a></li>
+            <li><a href="#">Content &nbsp; <i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="listening.html" target="_blank">Listening</a></li>
+                <li><a href="reading.html" target="_blank">Reading</a></li>
+                <li><a href="writing.html" target="_blank">Writing</a></li>
+                <li><a href="speaking.html" target="_blank">Speaking</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<!-- /Header -->
+
+<div class="page-main">
+  
+  <div class="clock">
+    <div class="clock-item" id = "clock" onload="currentTime()"></div>
+    <p class="clock-item" id="welcome"></p>
+  </div>
+
+  <div class="inner-main test-format">
+    <!-- Content Source: https://www.ielts.org/for-test-takers/test-format-->
+    <h1>Speaking</h1>
+    <form>
+      <p data-aos="fade-out">Click on the button bellow to go to sample test questions and practice</p><br>
+      <a href="speaking_sample.html" target="_self"><input type="button" class="go-btn" value="LET'S GO"></a>
+    </form>
+    <hr>
+
+    <p>The speaking section assesses your use of spoken English. Every test is recorded.</p>
+    <ul>
+      <li>Part 1 - the examiner will ask you general questions about yourself and a range of familiar topics, such as home, family, work, studies and interests.
+          This part lasts between four and five minutes.</li>
+      <li>Part 2  - you will be given a card which asks you to talk about a particular topic. You will have one minute to prepare before speaking for up to two minutes.
+          The examiner will then ask one or two questions on the same topic.</li>
+      <li>Part 3 - you will be asked further questions about the topic in Part 2. These will give you the opportunity to discuss more abstract ideas and issues.
+          This part of the test lasts between four and five minutes.</li>
+    </ul><hr>
+
+    <h2>IELTS Speaking description</h2>
+    <p><span>Paper format: </span>The Speaking test consists of an oral interview between the test takers' and an examiner. All Speaking tests are recorded.</p>
+    <p><span>Timing: </span>11–14 minutes</p>
+    <p><span>Task types: </span>There are three parts to the test and each part fulfils a specific function in terms of interaction pattern, task input and test takers output.</p><hr>
+
+    <h2>Part 1 – Introduction and interview</h2>
+    <p><span>Task type and format: </span>In this part, the examiner introduces him/herself and checks the test takers' identity. They then ask the test takers general questions on some
+      familiar topics such as home, family, work, studies and interests. To ensure consistency, questions are taken from a script. Part 1 lasts for 4–5 minutes.</p>
+    <p><span>Task focus: </span>This part of the test focuses on the ability to communicate opinions and information on everyday topics and common experiences or situations by answering a range of questions.</p>
+    <p><span>No. of questions: </span>Variable</p><hr>
+
+    <h2>Part 2 – Long turn</h2>
+    <p><span>Task type and format: </span>Part 2 is the individual long turn. The examiner gives the test takers a task card which asks the test takers to talk about a particular topic,
+      includes points to cover in their talk and instructs the test takers to explain one aspect of the topic. Test takers are given one minute to prepare their talk, and are given a pencil and paper to make notes.
+      The examiner asks the test takers to talk for 1 to 2 minutes, stops the test takers after 2 minutes, and asks one or two questions on the same topic.</p>
+    <p>Using the points on the task card effectively, and making notes during the preparation time, will help the test takers think of appropriate things to say, structure their talk, and keep talking for 2 minutes.
+      Part 2 lasts 3–4 minutes, including the preparation time.</p>
+    <p><span>Task focus: </span>This part of the test focuses on the ability to speak at length on a given topic (without further prompts from the examiner), using appropriate language and organising ideas coherently.
+      It is likely that the test takers will need to draw on their own experience to complete the long turn.</p>
+    <p><span>No. of questions: </span>Variable</p><hr>
+
+    <h2>Part 3 – Discussion</h2>
+    <p><span>Task type and format: </span>In Part 3, the examiner and the test takers discuss issues related to the topic in Part 2 in a more general and abstract way and, where appropriate, in greater depth.
+      Part 3 lasts 4–5 minutes.</p>
+    <p><span>Task focus: </span>This part of the test focuses on the ability to express and justify opinions and to analyse, discuss and speculate about issues.</p>
+    <p><span>No. of questions: </span>Variable</p><hr>
+
+    <h5 data-aos="fade-right">Source: www.ielts.org</h5>
+
+  </div>
+</div>
+
+<!-- Footer -->
+    <div class="footer">
+      <div class="inner-footer">
+
+        <div class="footer-section contact-form">
+            <p>Contact us:</p>
+            <form id="contact-us-form" onsubmit="return alertMessage()" action="contact.php" method="post">
+              <input type="email" name="email" id="email" class="text-input contact-input" placeholder="Your E-mail"
+              onkeydown="validate()">
+              <span id="email-verify"></span>
+              <textarea name="msg" id="message" class="text-input contact-input" placeholder="Your Message"></textarea>
+              <span id="text"></span>
+              <button type="submit" class="btn submit-btn">
+                <i class="fas fa-envelope-open-text"></i> &nbsp;
+                Send
+              </button>
+            </form>
+        </div>
+
+        <div class="footer-section links">
+          <p>Follow Us</p><br>
+          <div class="mail-us">
+            <a href="mailto:yourIELTS2021@gmail.com"><i class="far fa-envelope"></i> &nbsp; Mail YourIELTS!</a>
+          </div>
+          <div class="social-links">
+            <a href="https://twitter.com/ielts_your" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourielts2021/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Yourielts-109113848230718" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section about">
+          <div class="about-us">
+            <a href="about.html" target="_self"><span class="span1">About<br>
+            </span><span class="span2">Your</span><span class="span1">IELTS</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- /Footer -->
+
+<!-- Scripts -->
+  <script type="text/javascript" src="clock.js"></script>
+  <script type="text/javascript" src="input_verification.js"></script>
+  <!-- https://github.com/michalsnik/aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700
+    });
+  </script>
+<!-- /Scripts -->
+  </body>
+</html>

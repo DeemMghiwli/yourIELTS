@@ -1,0 +1,443 @@
+@media print {
+  body{
+    background-color: white;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Century Gothic";
+}
+body{
+  background-color: #f2f2f2;
+  /*To make a footer sticks to the bottom of the page*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*HEADER*/
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0086b3;
+}
+.header .quiz-header{
+  padding: 20px;
+}
+.header .inner-header{
+  width: 95%;
+  height: 100%;
+  display: flex; /*Rsponsive header*/
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  margin: 0 auto;
+}
+.header .inner-header .logo{
+  position: relative;
+  height: 100%;
+}
+.header .inner-header .logo a{
+  height: 100%;
+}
+.header .inner-header .logo h1{ /*Your*/
+  color : #1a1a1a;
+  height: 100%;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: 200;
+}
+.header .inner-header .logo h1 span{ /*IELTS*/
+  font-weight: 800;
+}
+nav ul{ /*Navigation list(Home, About, Content)*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li{
+  display: block;
+  float: left;
+  padding: 24px 14px;
+  position: relative;
+}
+nav ul li a{
+  color: #1a1a1a;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: all .3s;
+}
+nav ul li a:hover{
+  color: white;
+  transition: all .3s;
+}
+nav ul li ul{ /*Drop-down list inside Content*/
+  display: none;
+  position: absolute;
+  padding-top: 15px;
+  background-color: #0086b3;
+  border-radius: 0px 0px 5px 5px;
+}
+nav ul li:hover ul{/*Display drop-down list when hover on Content*/
+  display: block;
+}
+nav ul li ul li{
+  padding: 15px 20px;
+}
+nav ul li ul li a:hover{
+  padding-left: 10px;
+}
+/*End of HEADER*/
+
+/*---------------------------------------------------------------------*/
+/*INDEX MAIN PART (Home page)*/
+.page-main{
+  padding-top: 80px;
+  text-align: center;
+}
+.page-main .about-link{
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px 50px;
+  margin: 30px;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.page-main .about-link:hover{
+  background-color: #ffcccc;
+  transition: all .3s;
+}
+.page-main .about-link a{
+  color: #1a1a1a;
+  font-weight: bolder;
+}
+.page-main .about-link a:hover{
+  color: #b30000;
+  font-style: italic;
+}
+.page-main .theme-rule{
+  text-align: center;
+  background-color: rgb(255, 81, 81);
+  height: 90px;
+  margin: 0px 30px 20px 30px;
+  border-radius: 5px;
+}
+.page-main .theme-rule .inner-theme-rule{
+  padding-top: 25px;
+}
+.page-main .sections{ /*The part containig all sections*/
+  text-align: center;
+  margin: 0px 10px 30px 10px;
+  padding: 10px;
+}
+.page-main .sections .sec{ /*Define a class for all sections*/
+  display: inline-block;
+  overflow: hidden; /*To prevent the divs' positions from getting messed up when placing text inside of it*/
+  margin: 20px 20px;
+  width: 410px;
+  height: 200px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.page-main .sections .inner-sec{
+  height: 80px;
+  margin: 60px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.page-main .sections .inner-sec a{
+  color: #1a1a1a;
+  display: inline-block;
+  width: 100% auto; /*a tag fills the whole width of it's container*/
+  margin-top: 10px;
+  padding: 5px 40px;
+  font-size: 3em;
+  transition: all .3s;
+}
+.page-main .sections .inner-sec a:hover{
+  color: #b30000;
+  font-style: italic;
+  transition: all .3s;
+}
+.page-main .sections .listening{
+  background-image: url("img/listening.jpg");
+  background-size: cover;
+}
+.page-main .sections .reading{
+  background-image: url("img/reading.jpg");
+  background-size: cover;
+}
+.page-main .sections .writing{
+  background-image: url("img/writing.jpg");
+  background-size: cover;
+}
+.page-main .sections .speaking{
+  background-image: url("img/speaking.jpg");
+  background-size: cover;
+}
+/*End of INDEX MAIN PART*/
+/*---------------------------------------------------------------------*/
+/*General style for all pages*/
+.page-main .clock{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 81, 81, 0.5);
+  border-radius: 30px;
+}
+.page-main .clock .clock-item{
+  display: inline-block;
+  margin-left: 3px;
+}
+.page-main .inner-main{
+  font-size: 1.2em;
+  text-align: left;
+  background-color: #ffcccc;
+  padding: 20px 50px;
+  margin: 30px;
+  border-radius: 5px;
+}
+.page-main .inner-main h1{
+  color: #b30000;
+  text-align: center;
+}
+.page-main .inner-main h2{
+  color: #b30000;
+  margin-bottom: 10px;
+}
+.page-main .inner-main h5{
+  color: #0086b3;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+.page-main .inner-main p{
+  margin-left: 20px;
+  margin-bottom: 12px;
+}
+.page-main .inner-main span{
+  font-style: italic;
+  font-weight: bold;
+}
+.page-main .inner-main hr{
+  margin: 23px 0px;
+}
+.page-main .inner-main form{ /*Add a button that acts as a link*/
+  text-align: center;
+}
+.page-main .inner-main form p{
+  display: inline-block; /*So the background of it doesn't fill the width of the container*/
+  margin: 12px 0px; /*To override previous styling for p*/
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+.page-main .inner-main .go-btn{
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  font-size: 1em;
+  background-color: #006080;
+  color: white;
+  padding: 5px 9px;
+  border-radius: 15px;
+  transition: all .3s;
+}
+.page-main .inner-main .go-btn:hover{
+  background-color: #b30000;
+  cursor: pointer;
+  transition: all .3s;
+}
+/*---------------------------------------------------------------------*/
+/*Quiz Page*/
+.page-main .quiz{
+  text-align: center;
+}
+.page-main .quiz ul li{
+  margin: 30px 0px;
+}
+/*End of Quiz*/
+
+/*ABOUT Page*/
+.page-main .about-page ul{
+  text-align: center;
+}
+.page-main .about-page ul li{
+  display: inline-block;
+  font-size: 0.7em;
+}
+/*End of ABOUT*/
+
+/*TEST-FORMAT*/
+.page-main .test-format ul li{
+  margin-left: 50px;
+  padding-bottom: 10px;
+  list-style-type: square;
+}
+/*End of TEST-FORMAT*/
+
+/*TEST-SAMPLE*/
+.page-main .test-sample ul li{
+  margin-left: 50px;
+  margin-bottom: 25px;
+  list-style-type: circle;
+}
+.page-main .test-sample ul li a{
+  color: #1a1a1a;
+  padding: 12px;
+  transition: all .2s;
+}
+.page-main .test-sample ul li a:hover{
+  color: #b30000;
+  padding-left: 20px;
+  transition: all .2s;
+}
+/*End of TEST-SAMPLE*/
+/*---------------------------------------------------------------------*/
+
+/*FOOTER*/
+/*General style for all footer sections*/
+.footer{
+  width: 100%;
+  background-color: #0086b3;
+  margin-top: auto; /*Make the footer sticks to the bottom , and nothing goes behined it*/
+}
+.footer .inner-footer{
+  width: 99%;
+  margin: 0 auto;
+  display: flex; /*Responsive footer*/
+  flex-wrap: wrap;
+}
+.footer .inner-footer .footer-section{
+  flex: 1;
+  width: 33.33%;
+  padding: 30px;
+  color: #1a1a1a;
+  text-align: center;
+}
+.footer .inner-footer .footer-section p{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*---------------------------------------------------------------------*/
+/*Quiz-footer*/
+.footer .quiz-footer{
+  text-align: center;
+  padding: 30px;
+}
+/*---------------------------------------------------------------------*/
+.footer .inner-footer .contact-form .contact-input{
+  background-color: #e6e6e6;
+  width: 75%; /*width set in percentage so it is responsive to resizing window*/
+  margin-top: 7px;
+  padding: 5px;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+}
+.footer .inner-footer .contact-form span{
+  font-weight: bold;
+  font-style: italic;
+  display: block;
+}
+.footer .inner-footer .contact-form .contact-input:focus{ /*change background-color of box when selected*/
+  background-color: #d9d9d9;
+}
+.submit-btn{
+  background-color: #006080;
+  color: white;
+  font-weight: 500;
+  padding: 5px 10px;
+  float: right;
+  margin-right: 40px;
+  border: none;
+  border-radius: 5px;
+  transition: all .3s;
+}
+.submit-btn:hover{
+  background-color: #b30000;
+  cursor: pointer;
+  transition: all .3s;
+}
+/*---------------------------------------------------------------------*/
+/*LINKS*/
+.footer .inner-footer .links .mail-us a{
+  font-size: 1.3em;
+  display: inline-block;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  transition: all .2s;
+}
+.footer .inner-footer .links .mail-us a:hover{
+  font-size: 1.4em;
+  color: white;
+  transition: all .2s;
+}
+.footer .inner-footer .links .social-links a{
+  color: #1a1a1a;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /*Center icon vertically*/
+  padding: 5px;
+  margin-right: 5px;
+  font-size: 1.3em;
+  border-radius: 50%; /*Make a circle background*/
+  transition: all .3s;
+}
+.footer .inner-footer .links .social-links a:hover{
+  color: white;
+  background-color: #1a1a1a;
+  transition: all .3s;
+}
+/*---------------------------------------------------------------------*/
+/*ABOUT*/
+.footer .inner-footer .about .about-us{
+  display: table;
+  width: auto;
+  margin: auto;
+  height: 100%;
+}
+.footer .inner-footer .about .about-us a{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 15px;
+  color: #1a1a1a;
+  font-size: 1.5em;
+  transition: all .3s;
+}
+.footer .inner-footer .about .about-us a:hover{
+  color: white;
+  transition: all .3s;
+}
+.footer .inner-footer .about .about-us .span1{
+  font-weight: 800;
+}
+.footer .inner-footer .about .about-us .span2{
+  font-weight: 200;
+}
+/*End of FOOTER*/
+
+/*Media Queris*/
+@media (max-width: 800px) {
+  .footer-section{ /*Responsive footer*/
+    width: 100%;
+  }
+}
+@media (max-width: 590px) {
+  .header .inner-header{ /*Responsive footer*/
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  .page-main{
+    padding-top: 130px;
+  }
+}

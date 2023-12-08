@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- fontawesome.com -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!-- https://github.com/michalsnik/aos -->
+    <link rel="shortcut icon" href="img/PageIcon.jpeg" type="image/jpeg type">
+    <title>Writing</title>
+  </head>
+  <body>
+
+<!-- Header -->
+    <header class="header">
+      <div class="inner-header">
+        <div class="logo">
+          <a href="index.html"><h1>Your<span>IELTS</span></h1></a>
+        </div>
+        <nav class="nav-header">
+          <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="index.php" target="_blank">Quiz</a></li>
+            <li><a href="#">Content &nbsp; <i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="listening.html" target="_blank">Listening</a></li>
+                <li><a href="reading.html" target="_blank">Reading</a></li>
+                <li><a href="writing.html" target="_blank">Writing</a></li>
+                <li><a href="speaking.html" target="_blank">Speaking</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<!-- /Header -->
+
+<div class="page-main">
+  
+  <div class="clock">
+    <div class="clock-item" id = "clock" onload="currentTime()"></div>
+    <p class="clock-item" id="welcome"></p>
+  </div>
+
+  <div class="inner-main test-sample">
+    <!-- Content Source: https://www.ielts.org/for-test-takers/sample-test-questions-->
+    <h1>Sample Test Questions - Writing</h1><hr>
+    <h5 data-aos="fade-out">Click on the link to view and download a test sample.</h5><hr>
+
+    <ul>
+      <li><a href="https://www.ielts.org/-/media/pdfs/writing-sample-tests/academic-writing-sample-task-1a.ashx?la=en" target="_blank">
+          Academic Writing sample task 1A</a></li>
+      <li><a href="https://www.ielts.org/-/media/pdfs/writing-sample-tests/academic-writing-sample-task-1b.ashx?la=en" target="_blank">
+          Academic Writing sample task 1B</a></li>
+      <li><a href="https://www.ielts.org/-/media/pdfs/writing-sample-tests/academic-writing-sample-task-1c.ashx?la=en" target="_blank">
+          Academic Writing sample task 1C</a></li>
+      <li><a href="https://www.ielts.org/-/media/pdfs/writing-sample-tests/academic-writing-sample-task-2a.ashx?la=en" target="_blank">
+          Academic Writing sample task 2A</a></li>
+      <li><a href="https://www.ielts.org/-/media/pdfs/writing-sample-tests/academic-writing-sample-task-2b.ashx?la=en" target="_blank">
+          Academic Writing sample task 2B</a></li>
+      <li><a href="https://www.ielts.org/-/media/pdfs/writing-sample-tests/ac-writing-sample-materials-and-examiner-comments.ashx?la=en" target="_blank">
+          Academic Writing sample materials and examiner comments</a></li>
+    </ul><hr>
+
+    <h5 data-aos="fade-right">Source: www.ielts.org</h5>
+
+  </div>
+</div>
+
+<!-- Footer -->
+    <div class="footer">
+      <div class="inner-footer">
+
+        <div class="footer-section contact-form">
+            <p>Contact us:</p>
+            <form id="contact-us-form" onsubmit="return alertMessage()" action="contact.php" method="post">
+              <input type="email" name="email" id="email" class="text-input contact-input" placeholder="Your E-mail"
+              onkeydown="validate()">
+              <span id="email-verify"></span>
+              <textarea name="msg" id="message" class="text-input contact-input" placeholder="Your Message"></textarea>
+              <span id="text"></span>
+              <button type="submit" class="btn submit-btn">
+                <i class="fas fa-envelope-open-text"></i> &nbsp;
+                Send
+              </button>
+            </form>
+        </div>
+
+        <div class="footer-section links">
+          <p>Follow Us</p><br>
+          <div class="mail-us">
+            <a href="mailto:yourIELTS2021@gmail.com"><i class="far fa-envelope"></i> &nbsp; Mail YourIELTS!</a>
+          </div>
+          <div class="social-links">
+            <a href="https://twitter.com/ielts_your" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourielts2021/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Yourielts-109113848230718" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section about">
+          <div class="about-us">
+            <a href="about.html" target="_self"><span class="span1">About<br>
+            </span><span class="span2">Your</span><span class="span1">IELTS</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- /Footer -->
+
+<!-- Scripts -->
+  <script type="text/javascript" src="clock.js"></script>
+  <script type="text/javascript" src="input_verification.js"></script>
+  <!-- https://github.com/michalsnik/aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700
+    });
+  </script>
+<!-- /Scripts -->
+  </body>
+</html>

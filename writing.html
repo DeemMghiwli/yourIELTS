@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- fontawesome.com -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!-- https://github.com/michalsnik/aos -->
+    <link rel="shortcut icon" href="img/PageIcon.jpeg" type="image/jpeg type">
+    <title>Writing</title>
+  </head>
+  <body>
+
+<!-- Header -->
+    <header class="header">
+      <div class="inner-header">
+        <div class="logo">
+          <a href="index.html"><h1>Your<span>IELTS</span></h1></a>
+        </div>
+        <nav class="nav-header">
+          <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="index.php" target="_blank">Quiz</a></li>
+            <li><a href="#">Content &nbsp; <i class="fas fa-chevron-down"></i></a>
+              <ul>
+                <li><a href="listening.html" target="_blank">Listening</a></li>
+                <li><a href="reading.html" target="_blank">Reading</a></li>
+                <li><a href="writing.html" target="_blank">Writing</a></li>
+                <li><a href="speaking.html" target="_blank">Speaking</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<!-- /Header -->
+
+<div class="page-main">
+  
+  <div class="clock">
+    <div class="clock-item" id = "clock" onload="currentTime()"></div>
+    <p class="clock-item" id="welcome"></p>
+  </div>
+
+  <div class="inner-main test-format">
+    <!-- Content Source: https://www.ielts.org/for-test-takers/test-format-->
+    <h1>Writing</h1>
+    <form>
+      <p data-aos="fade-out">Click on the button bellow to go to sample test questions and practice</p><br>
+      <a href="writing_sample.html" target="_self"><input type="button" class="go-btn" value="LET'S GO"></a>
+    </form>
+    <hr>
+
+    <p>Topics are of general interest to, and suitable for, test takers entering undergraduate and postgraduate studies or seeking professional registration. There are two tasks:</p>
+    <ul>
+      <li>Task 1 - you will be presented with a graph, table, chart or diagram and asked to describe, summarise or explain the information in your own words.
+        You may be asked to describe and explain data, describe the stages of a process, how something works or describe an object or event.</li>
+      <li>Task 2 - you will be asked to write an essay in response to a point of view, argument or problem. Responses to both tasks must be in a formal style.</li>
+    </ul><hr>
+
+    <h2>IELTS Writing description</h2>
+    <p><span>Paper format: </span>There are two Writing tasks and BOTH must be completed.</p>
+    <p><span>Timing: </span>60 minutes</p>
+    <p><span>No. of questions: </span>2</p>
+    <p><span>Task types: </span>In Task 1, test takers are asked to describe some visual information (graph/table/chart/diagram) in their own words.
+      They need to write 150 words in about 20 minutes.<br>In Task 2, they respond to a point of view or argument or problem. They need to write 250 words in about 40 minutes.</p>
+    <p><span>Answering: </span>Answers must be given on the answer sheet and must be written in full. Notes or bullet points are not acceptable as answers. Test takers may write
+      on the question paper but this cannot be taken from the examination room and will not be seen by the examiner.</p><hr>
+
+
+    <h2>Task 1</h2>
+    <p><span>Task type and format: </span>In Writing Task 1, test takers may be asked to describe facts or figures presented in one or more graphs, charts or tables on a related topic;
+      or they may be given a diagram of a machine, a device or a process and asked to explain how it works. They should write in an academic or semi-formal/neutral styles and include
+      the most important and the most relevant points in the diagram. Some minor points or details may be left out.</p>
+    <p>Test takers should spend no more than 20 minutes on this task. They are asked to write at least 150 words and will be penalised if their answer is too short. While test takers
+      will not be penalised for writing more than 150 words, they should remember that a longer Task 1 answer may mean that they have less time to spend on Task 2, which contributes
+      twice as much to the Writing band score.</p>
+    <p>Test takers should also note that they will be penalised for irrelevance if the response is off-topic or is not written as full, connected text (e.g. using bullet points in any
+      part of the response, or note form, etc.). They will be severely penalised for plagiarism (i.e. copying from another source).</p>
+    <p>Test takers must write their answers on the answer booklet.</p>
+    <p><span>Task focus: </span>This task assesses the ability to identify the most important and relevant information and trends in a graph, chart, table or diagram, and to give a
+      well-organised overview of it using language accurately in an academic style.</p>
+    <p><span>No. of questions: </span>1</p><hr>
+
+    <h2>Task 2</h2>
+    <p><span>Task type and format: </span>In Writing Task 2, test takers are given a topic to write about an academic or semi-formal/neutral style. Answers should be a discursive
+      consideration of the relevant issues. Test takers should make sure that they read the task carefully and provide a full and relevant response. For example, if the topic is
+      a particular aspect of computers, they should focus on this aspect in their response. They should not simply write about computers in general.</p>
+    <p>Test takers should spend no more than 40 minutes on this task. They are asked to write at least 250 words and will be penalised if their answer is too short. While test takers
+      will not be penalised for writing more than 250 words, if they write a very long answer they may not have time for checking and correcting at the end and some ideas may not be
+      directly relevant to the question.<br>Task 2 contributes twice as much to the final Writing band score as Task 1. Therefore, test takers who fail to attempt to answer this task
+      will greatly reduce their chance of achieving a good band.</p>
+    <p>Test takers will be penalised for irrelevance if the response is off-topic or is not written as full, connected text (e.g. using bullet points in any part of the response, or
+      note form, etc.). They will be severely penalised for plagiarism (i.e. copying from another source). Finally, test takers should make sure that they do not copy directly from
+      the question paper because this will not be assessed.</p>
+    <p>They must write their answers on the answer booklet.</p>
+    <p><span>Task focus: </span>This task assesses the ability to present a clear, relevant, well-organised argument, giving evidence or examples to support ideas and use language accurately.</p>
+    <p><span>No. of questions: </span>1</p><hr>
+
+    <h5 data-aos="fade-right">Source: www.ielts.org</h5>
+
+    </div>
+</div>
+
+<!-- Footer -->
+    <div class="footer">
+      <div class="inner-footer">
+
+        <div class="footer-section contact-form">
+            <p>Contact us:</p>
+            <form id="contact-us-form" onsubmit="return alertMessage()" action="contact.php" method="post">
+              <input type="email" name="email" id="email" class="text-input contact-input" placeholder="Your E-mail"
+              onkeydown="validate()">
+              <span id="email-verify"></span>
+              <textarea name="msg" id="message" class="text-input contact-input" placeholder="Your Message"></textarea>
+              <span id="text"></span>
+              <button type="submit" class="btn submit-btn">
+                <i class="fas fa-envelope-open-text"></i> &nbsp;
+                Send
+              </button>
+            </form>
+        </div>
+
+        <div class="footer-section links">
+          <p>Follow Us</p><br>
+          <div class="mail-us">
+            <a href="mailto:yourIELTS2021@gmail.com"><i class="far fa-envelope"></i> &nbsp; Mail YourIELTS!</a>
+          </div>
+          <div class="social-links">
+            <a href="https://twitter.com/ielts_your" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yourielts2021/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/Yourielts-109113848230718" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section about">
+          <div class="about-us">
+            <a href="about.html" target="_self"><span class="span1">About<br>
+            </span><span class="span2">Your</span><span class="span1">IELTS</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+<!-- /Footer -->
+
+<!-- Scripts -->
+  <script type="text/javascript" src="clock.js"></script>
+  <script type="text/javascript" src="input_verification.js"></script>
+  <!-- https://github.com/michalsnik/aos -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700
+    });
+  </script>
+<!-- /Scripts -->
+  </body>
+</html>
